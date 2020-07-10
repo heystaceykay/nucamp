@@ -1,0 +1,93 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!-- Typeface Details -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- build:css css/main.css -->
+    <!-- endbuild -->
+
+    <title>Ramp Planner</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Ramp Planner</h1>
+    <p>If you need a ramp for the entrance(s) to your home, figuring out which materials you need can be a frustrating step in the process of making that a reality.
+        But it doesn't have to be. With a few key pieces of information, you can plan your entire project right here.</p>
+        <form>
+            <div class="form-group row align-items-center">
+                <div class="col-auto my-1">
+                  <label class="col-sm-2 col-form-label col-form-label-lg" for="colFormLabelLg">Entrance Width</label>
+                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option value="0" selected>24 inches</option>
+                    <option value="1">24 <span>&#189;</span> inches</option>
+                    <option value="2">25 inches</option>
+                    <option value="3">25 <span>&#189;</span> inches</option>
+                    <option value="4">26 inches</option>
+                    <option value="5">26 <span>&#189;</span> inches</option>
+                    <option value="6">27 inches</option>
+                    <option value="7">27 <span>&#189;</span> inches</option>
+                    <option value="8">28 inches</option>
+                    <option value="9">28 <span>&#189;</span> inches</option>
+                    <option value="10">29 inches</option>
+                    <option value="11">29 <span>&#189;</span> inches</option>
+                    <option value="12">30 inches</option>
+                    <option value="13">30 <span>&#189;</span> inches</option>
+                    <option value="14">31 inches</option>
+                    <option value="15">31 <span>&#189;</span> inches</option>
+                    <option value="16">32 inches</option>
+                    <option value="17">32 <span>&#189;</span> inches</option>
+                    <option value="18">33 inches</option>
+                    <option value="19">33 <span>&#189;</span> inches</option>
+                    <option value="20">34 inches</option>
+                    <option value="21">34 <span>&#189;</span> inches</option>
+                    <option value="22">35 inches</option>
+                    <option value="23">35 <span>&#189;</span> inches</option>
+                    <option value="24">36 inches</option>
+                    <option value="25">36 <span>&#189;</span> inches</option>
+                    <option value="26">37 inches</option>
+                    <option value="27">37 <span>&#189;</span> inches</option>
+                    <option value="28">38 inches</option>
+                    <option value="29">38 <span>&#189;</span> inches</option>
+                    <option value="30">39 inches</option>
+                    <option value="31">39 <span>&#189;</span> inches</option>
+                    <option value="32">40 inches</option>
+                    <option value="33">40 <span>&#189;</span> inches</option>
+                    <option value="34">41 inches</option>
+                    <option value="35">41 <span>&#189;</span> inches</option>
+                    <option value="36">42 inches</option>
+                    <option value="37">42 <span>&#189;</span> inches</option>
+                  </select>
+                </div>
+                <div class="col-auto my-1">
+                  <div class="custom-control custom-checkbox mr-sm-2">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="customControlAutosizing"
+                    />
+                    <label class="custom-control-label" for="customControlAutosizing"
+                      >Remember my preference</label
+                    >
+                  </div>
+                </div>
+                <div class="col-auto my-1">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+
+        <div class = ""></div>
+    <button type="button" onclick="runGame()">Ramp Planner</button>
+    <script src="js/ramp.js"></script>
+  </body>
+</html>
