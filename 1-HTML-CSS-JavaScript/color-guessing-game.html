@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Color Guessing Game</title>
+        <style>
+            h1 {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 4em;
+                color: black;
+                text-align: center;
+                display: block;
+            }
+
+            button {
+                top: 50%;
+                height: 100px;
+                width: 300px;
+                border-radius: 8px;
+                background-color: white;
+                color: black;
+                border: solid 2px black;
+                align-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 3em;
+            }
+
+            button:hover {
+                height: 100px;
+                width: 300px;
+                border-radius: 8px;
+                background-color: black;
+                color: white;
+                align-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 3em;
+            }
+
+            .aesthetics {
+                padding: 70px 0;
+                position: absolute;
+                margin: auto;
+                width: 100%;
+                text-align: center;
+            }
+        </style>
+    </head>
+<body>
+
+    <span class="center" class="aesthetics">
+    <h1>Color Guessing Game</h1>
+    <div class="aesthetics"><button type="button" onclick="runGame()">Start Game</button>
+    <span id="buttonAppear"></span>
+    <span id="playNow"></span></div>
+    </div>
+    </span>
+
+    <script>
+        
+        function buttonAppear(){
+            document.getElementById("buttonAppear").innerHTML = '<p><button onclick="window.location.reload()">Play again?</button>';
+        }
+
+        function playNow(){
+            document.getElementById("buttonAppear").innerHTML = '<p><button onclick="window.location.reload()">Play now?</button>';
+        }
+        
+        const COLORS_ARRAY = ['magenta', 'crimson', 'tomato', 'coral', 'orange', 'gold', 'lime', 'aqua', 'indigo', 'violet'];
+
+        COLORS_ARRAY.sort();
+        
+        const targetIndex = Math.floor(Math.random() * COLORS_ARRAY.length);
+        console.log(targetIndex);
+
+        let target = COLORS_ARRAY[targetIndex]
+        console.log(target);
+
+
+        let numTries = 0;
+        
+        function runGame() { 
+            let guess = "";
+            let correct = false;
+
+           do {
+
+            guess = prompt('I am thinking of one of these colors:\n\n' + COLORS_ARRAY + '\n\n\n\n What color am I thinking of?\n');
+            console.log(guess);
+            numTries += 1;     
+            console.log('this is guess # ' + numTries);       
+            if (guess == null || guess == "") {
+                alert('Maybe we can play at a different time, then.');
+                playNow();
+            } else checkGuess(guess, target);
+
+
+            } while (guess === correct);
+
+        }
+
+        function changeBodyBg(guess){
+            document.body.style.background = guess;
+        }
+
+        function checkGuess (guess, target) {
+            if (guess < target) {
+                alert('Your guess is closer to the letter `a` than my color.');
+                runGame();
+            } else if (guess > target) {
+                alert('Your guess is closer to the letter `z` than my color.');
+                runGame();
+            } else if (guess === target) {
+                alert('Congratulations! You have guessed the correct color!\n\n It took you ' + numTries + ' guesses to finish the game!\n\nHit OK to see the color in the background.');
+                changeBodyBg(guess);
+                buttonAppear();
+                
+            }
+            }
+</script>
+</body>

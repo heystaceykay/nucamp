@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Matching Game</title>
+        <style>
+            h1 {
+                font-size: 3em;
+                font-family: Helvetica, sans-serif;
+                font-kerning: none;
+                line-height: 50%;
+            }
+
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+            }
+            
+            img {
+                position: absolute;
+            }
+
+            div {            
+                position: absolute;
+                width: 500px;
+                height: 500px;
+            }
+
+            #rightSide {
+                left: 500px;
+                border-left: 1px solid;
+            }
+        </style>
+    </head>
+<body onload='generateFaces()'>
+    <h1>Matching Game</h1>
+    <p>Click on the extra smiling face on the left.</p>
+    <div id="leftSide"></div>
+    <div id="rightSide"></div>
+    
+    <script>
+        
+        let numberOfFaces = 5;
+        
+        const theLeftSide = document.querySelector('#leftSide');
+        const theRightSide = document.querySelector('#rightSide');
+        
+        function generateFaces() {
+            for (let i = 0; i < numberOfFaces; i++) {
+                let face = document.createElement('img');
+                face.src = 'images/smile.png';
+                console.log('Face # ' + i);
+                console.log(theRightSide);
+                let randomTop = Math.floor((Math.random() * 400) + 1);
+                let randomLeft = Math.floor((Math.random() * 400) + 1);
+                face.style.top = randomTop + 'px';
+                face.style.left = randomLeft + 'px';
+                //console.log(face);
+                console.log(randomLeft + ', ' + randomTop);
+                theLeftSide.appendChild(face);
+            }
+
+            const leftSideImages = theLeftSide.cloneNode(true);
+            leftSideImages.removeChild(leftSideImages.lastChild);
+            console.log('Removed last smiley.');
+            theRightSide.appendChild(leftSideImages);
+            console.log('Appended right side.');
+            
+            theLeftSide.lastChild.addEventListener('click', nextLevel);
+            document.body.addEventListener('click', gameOver);     
+        }
+
+        function nextLevel() {
+            event.stopPropagation();
+            numberOfFaces += 5;
+
+            console.log('Faces, but more!')
+
+
+
+            while (leftSide.hasChildNodes) {
+                leftSide.removeChild(leftSide.firstChild);
+            }
+
+            console.log('Removed left child.');
+
+            while (rightSide.hasChildNodes) {
+                rightSide.removeChild(rightSide.firstChild);
+            } 
+            
+            console.log('Removed right child.');
+            
+            generateFaces();
+
+            }
+
+        function gameOver() {
+            alert('Game over!');
+            document.body.removeEventListener('click', gameOver);
+            document.body.removeEventListener('click', nextLevel);
+
+            function buttonAppear(){
+            document.getElementById("buttonAppear").innerHTML = '<p><button onclick="window.location.reload()">Play again?</button>';
+        }
+        }
+
+    </script>
+</body>

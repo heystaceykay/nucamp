@@ -1,0 +1,184 @@
+<!-- @format -->
+
+<form>
+  <div class="form-group row align-items-center">
+    <div class="col-auto my-1">
+      <label class="col-sm-2 col-form-label col-form-label-lg" for="colFormLabelLg">Entrance Width</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option value="0" selected>24 inches</option>
+        <option value="1">24 <span>&#189;</span> inches</option>
+        <option value="2">25 inches</option>
+        <option value="3">25 <span>&#189;</span> inches</option>
+        <option value="4">26 inches</option>
+        <option value="5">26 <span>&#189;</span> inches</option>
+        <option value="6">27 inches</option>
+        <option value="7">27 <span>&#189;</span> inches</option>
+        <option value="8">28 inches</option>
+        <option value="9">28 <span>&#189;</span> inches</option>
+        <option value="10">29 inches</option>
+        <option value="11">29 <span>&#189;</span> inches</option>
+        <option value="12">30 inches</option>
+        <option value="">30 <span>&#189;</span> inches</option>
+        <option value="">31 inches</option>
+        <option value="">31 <span>&#189;</span> inches</option>
+        <option value="">32 inches</option>
+        <option value="">32 <span>&#189;</span> inches</option>
+        <option value="">33 inches</option>
+        <option value="">33 <span>&#189;</span> inches</option>
+        <option value="">34 inches</option>
+        <option value="">34 <span>&#189;</span> inches</option>
+        <option value="">35 inches</option>
+        <option value="">35 <span>&#189;</span> inches</option>
+        <option value="">36 inches</option>
+        <option value="">36 <span>&#189;</span> inches</option>
+        <option value="">37 inches</option>
+        <option value="">37 <span>&#189;</span> inches</option>
+        <option value="">38 inches</option>
+        <option value="">38 <span>&#189;</span> inches</option>
+        <option value="">39 inches</option>
+        <option value="">39 <span>&#189;</span> inches</option>
+        <option value="">40 inches</option>
+        <option value="">40 <span>&#189;</span> inches</option>
+        <option value="">41 inches</option>
+        <option value="">41 <span>&#189;</span> inches</option>
+        <option value="">42 inches</option>
+        <option value="">42 <span>&#189;</span> inches</option>
+      </select>
+    </div>
+    <div class="col-auto my-1">
+      <div class="custom-control custom-checkbox mr-sm-2">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="customControlAutosizing"
+        />
+        <label class="custom-control-label" for="customControlAutosizing"
+          >Remember my preference</label
+        >
+      </div>
+    </div>
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Additional CSS must be placed after Bootstrap CSS -->
+<!-- Typeface Details -->
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+<!-- More bootstrap Stuff -->
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+<link rel="stylesheet" href="css/styles.css" />
+<!-- build:css css/main.css -->
+<link rel="stylesheet" href="css/styles.css" />
+<!-- endbuild -->
+
+
+
+<a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+
+<button class="btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
+
+function myFunction() {
+  window.print();
+}
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    
+    	<!-- build:js js/main.js -->
+    	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    	<script src="js/scripts.js"></script>
+      <!-- endbuild -->
+      
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Entrance Width</h5>
+          <p class="card-text">Measure, in inches, the distance on the inside of your entryway and round down to the nearest whole number.</p>
+          <input type="number" class="form-control" placeholder="32" list = "#eWidth" min="24" max="36" aria-label="Entrance Width" aria-describedby="basic-addon2">
+                <datalist id="eWidth">
+                  <option value="0">24</option>
+                  <option value="1">24 <span>&#189;</span></option>
+                  <option value="2">25</option>
+                  <option value="3">25 <span>&#189;</span></option>
+                  <option value="4">26</option>
+                  <option value="5">26 <span>&#189;</span></option>
+                  <option value="6">27</option>
+                  <option value="7">27 <span>&#189;</span></option>
+                  <option value="8">28</option>
+                  <option value="9">28 <span>&#189;</span></option>
+                  <option value="10">29</option>
+                  <option value="11">29 <span>&#189;</span></option>
+                  <option value="12">30</option>
+                  <option value="13">30 <span>&#189;</span></option>
+                  <option value="14">31</option>
+                  <option value="15">31 <span>&#189;</span></option>
+                  <option value="16">32</option>
+                  <option value="17" selected>32 <span>&#189;</span></option>
+                  <option value="18">33</option>
+                  <option value="19">33 <span>&#189;</span></option>
+                  <option value="20">34</option>
+                  <option value="21">34 <span>&#189;</span></option>
+                  <option value="22">35</option>
+                  <option value="23">35 <span>&#189;</span></option>
+                  <option value="24">36</option>
+                  <option value="25">36 <span>&#189;</span></option>
+                  <option value="26">37</option>
+                  <option value="27">37 <span>&#189;</span></option>
+                  <option value="28">38</option>
+                  <option value="29">38 <span>&#189;</span></option>
+                  <option value="30">39</option>
+                  <option value="31">39 <span>&#189;</span></option>
+                  <option value="32">40</option>
+                  <option value="33">40 <span>&#189;</span></option>
+                  <option value="34">41</option>
+                  <option value="35">41 <span>&#189;</span></option>
+                  <option value="36">42</option>
+                  <option value="37">42 <span>&#189;</span></option>
+              </datalist>
+        </div>
+      </div>

@@ -1,0 +1,15 @@
+<html lang="en">
+<body onload="doSomething()">
+    <img src="goldenretrieveropennew.jpg" alt="A cat" />
+    <script>
+        function doSomething() {
+            const theImg = document.getElementsByTagName('img')[0];
+            document.body.appendChild(theImg.cloneNode(true));
+            document.body.removeChild(document.body.lastElementChild);
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- goldenretrieveropennew.jpg -->

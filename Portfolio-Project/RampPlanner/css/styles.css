@@ -1,7 +1,19 @@
+* {
+    margin-left: 20px;
+}
+
+.verbiage {
+	width: 365px;
+	float: left;
+	border-left: 1px solid #aaa;
+	padding-left: 24px;
+}
+
 h1 {
     font-size: 3em;
     font-family: Helvetica, Arial, sans-serif;
     color: blueviolet;
+    margin-left: 25px;
 }
 
 h2 {
@@ -15,3 +27,16 @@ li {
     font-family: Arial, Helvetica, sans-serif;
     color: slategrey;
 }
+
+#eUp {
+
+}
+
+
+/* 
+font-family: 'Audiowide', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Press Start 2P', cursive;
+ */

@@ -18,6 +18,26 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <h1>Ramp Planner</h1>
+    <h1>Get in touch!</h1>
+    <p>If you have any questions or want to contribute in some way to the future
+      of this project, we hope you'll contact us somehow. You've got options.</p>
 
-    
+      <div class="card" style="width: 25rem;">
+        <div class="card-body">
+          <h5 class="card-title">Contact form</h5>
+          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/rampplanner@gmail.com" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label class="row" for="name">Name</label>
+              <input class="row" type="text" name="name" id="name" placeholder="Your name" required="">
+              <label class="row" for="email-address">Email Address</label>
+              <input class="row" type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+              <label class="row" for="message">Message</label>
+              <textarea class="row" rows="5" name="message" id="message" placeholder="Type your message to us in here." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              <input class="row btn btn-primary" type="submit" value="Submit" margin-top=10px padding-top=10px >
+            </fieldset>
+          </form>
+        </div>
+      </div> 
+  </body>
+</html>
