@@ -1,0 +1,96 @@
+
+Lumber:
+(1) 2 x 4 x 8 ft.
+(2) 2 x 8 x 8 ft.
+(1) 4 ft. x 8 ft. x 3/4 in. OSB or plywood
+
+
+
+Home Depot
+https://www.homedepot.com/p/WeatherShield-2-in-x-4-in-x-8-ft-2-Prime-Ground-Contact-Pressure-Treated-Lumber-253920/206967811?MERCH=REC-_-pipsem-_-206937455-_-206967811-_-N
+https://www.homedepot.com/p/2-in-x-8-in-x-8-ft-2-Prime-Ground-Contact-Pressure-Treated-Lumber-107523/206937455
+https://www.homedepot.com/p/3-4-in-x-4-ft-x-8-ft-Ground-Contact-Pressure-Treated-Pine-Performance-Rated-Sheathing-106128/206971071
+
+Lowe's
+https://www.lowes.com/pd/Top-Choice-Common-2-in-x-4-in-x-8-ft-Actual-1-5-in-x-3-5-in-x-8-ft-Lumber/1000192663
+https://www.lowes.com/pd/Top-Choice-2-in-x-8-in-x-8-ft-Southern-Yellow-Pine-Lumber-Common-1-5-in-x-7-25-in-x-8-ft-Actual/1000009732
+https://www.lowes.com/pd/Severe-Weather-3-4-in-Common-Southern-Yellow-Pine-Plywood-Sheathing-Application-as-4-x-8/50277377
+
+
+
+
+Hardware / Supplies:
+(24) 3-inch galvanized deck screws (https://www.homedepot.com/p/Grabber-8-3-in-Philips-Bugle-Head-Wood-Deck-Screws-1-lb-Pack-23895/203696250)
+(24) 1-5/8 inch wood screws (https://www.homedepot.com/p/Grip-Rite-6-x-1-5-8-in-Philips-Bugle-Head-Coarse-Thread-Sharp-Point-Polymer-Coated-Exterior-Screw-1-lb-Pack-PTN158S1/100192216)
+Paint or DeckOver (https://www.homedepot.com/p/BEHR-Premium-Advanced-DeckOver-1-gal-SC-330-Redwood-Smooth-Solid-Color-Exterior-Wood-and-Concrete-Coating-500001/308486784)
+
+
+Tools I Used:
+Circular Saw
+Saw Guide (any straight edge)
+(2) Clamps
+Chop Saw (optional)
+Cordless Drill
+Combination pilot hole / countersink bit Chalk Line (optional)
+
+
+
+
+Determine Your Measurements
+
+A QUICK NOTE ABOUT MATERIAL SIZES:
+If you are not familiar with buying lumber materials, be aware that the name of a product such as a 2x4 (pronounced “two by four”) is not the actual size of the product. For exam- ple, while you might expect a 2x4 to measure 2 inches by 4 inches it will actually mea- sure 1.5 inches by 3.5 inches. Even engineered products like plywood are not always exact. For this project I bought a sheet of plywood that was sold as 1/2 inch but actually measured 5/8 inch. So when you are adjusting the measurements for your ramps be sure to take actual measurements of the products you are using.
+
+METHODS OF WORK:
+It is always a good idea to pre-drill and counter sink all screws to prevent splitting the wood. This is especially true when working close to the edges or screwing into the edge, like you will be doing in this build.
+The 3 slanted supports need to be as identical as possible so measure carefully and clamp a straight edge to the work piece and then run your saw along it. Go slowly and be careful not to swerve away from the guide.
+It is very important that the spacers are cut to the exact same length. Otherwise the sides of the ramp will bow out. If you use a chop saw it is easy to set up a stop block. Otherwise you can cut all the pieces 1/4 inch long and then clamp them together and cut them all to final length at the same time.
+
+DETERMINE YOUR MEASUREMENTS:
+The first measurement you need is the height of your slanted supports. To determine this take the height of your step (In my case it was 6 inches) and subtract the thickness of your ramp surface material (mine was 5/8 of an inch). So the height of my slants needed to be 5 3/8 inches. Then you need the length.
+In my research I found a reference that said a comfortable slope for a wheelchair ramp is 1:12. Thankfully this keeps the math easy. To find the correct length of your slanted supports, convert the height of your step from inches to feet. So for my 6 inch step the base of my slanted supports needed to be 6 feet long. Now you can cut the 3 slanted supports.
+Ok, now take a deep breath, this is the hardest math of the project, determining the correct length of the spacers. If you hate math, the diagram to the right explains it in a picture. While I love math, the diagram shows the way I actually did it so don’t be shy. To determine the length of the spacers you take the width of your walkway, subtract the total width of all 3 slanted supports (just stack all three and take one measurement), divide that measurement in half and subtract 1 inch. Honestly, even if you like math the diagram probably makes more sense.
+Subtracting the additional inch from each spacer makes it so the base of your ramp sits 1 inch in from either side of the walkway. This ensures that they are solidly positioned even if the ramp is not laid down precisely.
+The last piece you need to cut is the plywood top surface. The width should be the same as the width of your walkway and the length should be the same as the top slanted edge of the slanted supports.
+
+Next up... Build it!
+
+
+Finding The Spacer Width Measurement
+STEP 1:
+Stack all 3 slanted supports along the inside edge of the walkway
+STEP 2:
+Measure the remaining distance from the edge of the slanted supports to the edge of the walkway
+
+
+Build: Step 1
+Start by attaching 2 spacers to one of the slanted supports by screwing through the slanted support and into the spacer using (2) 3 inch deck screws for each spacer.
+Attach one of them almost all the way at the back (the tall side) but leave a small space. This space ensures that the finished ramp will push up flush to the step.
+
+Attach the second spacer to the opposite side of the slant and as far forward as you can but make sure top of the spacer is below the top of the slant support.
+
+Build: Step 2
+Attach the next 2 spacers as shown, staggering them so you can screw through the slanted support.
+
+Build: Step 3
+Attach the last 2 spacers roughly half way between the others.
+
+Build: Step 4
+Align the remaining 2 slanted supports so they are flush with the tall end of the center support. The best way is to push them all up against the step where the ramp will be used. Screw from the outside edges into each of the spacers again using (2) of the 3 inch deck screws for each spacer.
+
+Build: Step 5
+Align the plywood surface so that it is flush with the tall end of the ramp making sure that the overhang is equal on each side and even all the way down the slants. If you cut the spacers precisely the overhang should be 1 inch on each side. It doesn’t matter if it is a little off as long as it is the same at the top and the bottom of the ramp.
+
+Build: Step 6
+Before you begin attaching the surface, hang one of your screws off the side and move it towards the front of the ramp until you have about half an inch between the end of the screw and the bottom of the slanted support.
+
+Then draw that line across the top of the plywood parallel to the bottom of the ramp. When you are attaching the top this line will indicate the last place you should drive a screw. Don’t worry about the line, it will get covered when you paint the ramp.
+
+Build: Step 7
+Next, mark the center line of each slanted support on the back edge of the surface and continue that mark all the way down the top of the ramp until you get to the screw stop line you created. I used a chalk line but doesn’t really matter how you make the line.
+
+The top is attached using the (24) 1-5/8 inch wood screws. Start attaching the top by driving the top left and top right screws first, being careful not to move the surface. Check alignment after each screw. Once these 2 are in the top shouldn’t go anywhere and you can work your way down each slanted support adding screws about every 6-8 inches until you reach the stop line.
+
+Once you are done screwing on the top you are ready to paint it. We used a product called Deck Over which is meant for resurfacing old worn decks and keep them from splintering. It sounded just right for this project and it was. It ended up having a pretty rough texture which we like. It feels like a no-slip surface kind of like grip tape.
+
+Congratulations! You’re Done!
