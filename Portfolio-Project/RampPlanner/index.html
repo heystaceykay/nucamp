@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <!-- Typeface Details -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa&family=Fredericka+the+Great&family=Open+Sans&family=Press+Start+2P&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="typefaces/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa&family=Open+Sans:wght@300;400&family=Quicksand:wght@300&display=swap">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -25,131 +25,199 @@
     <header>
       <nav class="navbar navbar-expand-sm navbar-light sticky-top shadow-sm p-3 mb-5 bg-white rounded">
         <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" height="50" width="50" /></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+        <a class="navbar-brand" href="#"><img src="images/rampPlannerLogo.png" height="100" width="100" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rpNav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rpNav">
           <span class="navbar-toggler-icon"></span>
           </button>
-      <div class="collapse navbar-collapse" id="nucampNavbar">
+      <div class="collapse navbar-collapse" id="rpNav">
           <ul class="navbar-nav">
               <li class="nav-item active"><a class="nav-link navigate" href="#"><span class="fa fa-home fa-lg"></span>  Home</a></li>
               <li class="nav-item"><a class="nav-link navigate" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>  Contact</a></li>
               <div class="col-right">
-              <li class="nav-item text-right"><button type="button" data-toggle="modal" data-target="#eUp" class="btn btn-dark text-light" data-toggle="tooltip" data-html="true" title="Be the first to know when we add new ramp styles and options!">Get updates</button></li>
+              <li class="nav-item text-right"><div class="col col-md-4 col-xl-2" id="emailBut"><button type="button" class="btn btn-dark text-light" data-toggle="modal" data-target="#eUp"><span class="fa fa-newspaper-o fa-lg"></span>  Updates</button></li>
           </ul>
       </div>
-    </div>  
-    </nav>
-  </header>
+      </nav>
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li> >
+        <li><a href="#">Library</a></li> >
+        <li class="active">Data</li>
+      </ol>
+    </header>
+    <div class="modal cardfade" id="eUp" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header card-header">
+                      <h3 class="col modal-title" id="keepInTouch">Keep In Touch!</h3>
+                      <button type="button" class="close col text-right" id="closeEm">&times;</button>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row form-group form-control col-form-label">
+                      <label class="col col-right col-sm-6" for="name">Name</label>
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      <input class="col" type="text" id="name" name="date" placeholder="name">
+                  </div>
+                  <div class="row form-group form-control col-form-label">
+                    <label class="col col-right col-sm-6" for="eAdd">Email</label>
+                        <input type="email" name="email" id="eAdd" value="email@domain.com">
+                    </label>
+                  </div>
+                    <div class="row form-group col-form-label">
+                        <div class="col">
+                            <button type="button" class="btn btn-secondary text-light" data-dismiss="modal" value="cancel">Cancel</button>
+                            <button type="button" class="btn btn-primary text-light" data-dismiss="modal" value="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  
   <div class="content">
-  <h1>ramp planner</h1>  
-    <p>If you need a ramp for the entrance(s) to your home, figuring out which materials you need can be
-    the most frustrating step in the building process. But it doesn't have to be. With a few
-    quick measurements, we can plan your entire project right here.</p>
-    
-    <p>(You'll need a tape measure now.)</p>
+    <h1>Ramp Planner</h1>  
+      <p>If you need a ramp for the entrance(s) to your home, figuring out which materials you need can be
+      the most frustrating step in the building process. But it doesn't have to be. With a few
+      quick measurements, we can plan your entire project right here.</p>
+      
+      <p>(You'll need a tape measure now.)</p>
 
     <div class="row">
       <div class="col col-sm-5" max-width=25%>
-    <div class="card">
-      <img class="card-img-top" src="images/entryWidth.jpg" alt="Doorway width being measured">
+        <div class="card border-light">
+      <img class="card-img-top" src="images/entryWidth.jpg" alt="Doorway width being measured.">
       <div class="card-body">
-        <h5 class="card-title">Entrance Width</h5>
-        <p class="card-text">Measure, in inches, the distance on the inside of your entryway and round down to the nearest whole number.</p>
-        <input type="number" class="form-control row col-auto" placeholder="32" min="24" max="42" step=".5" aria-label="Entrance Width" aria-describedby="basic-addon2">
-        <div class="input-group-append"><span class="input-group-text" id="basic-addon2">inches</span>
+        <h2 class="card-title">Entrance Width</h5>
+        <p class="card-text">Measure the distance, in inches, from one side to the other on the inside of your entryway.</p>
+        <div class="row col-auto">
+            <div class="input-group-append">
+        <input type="number" class="form-control col-sm-6" placeholder="32" min="24" max="42" step=".25" aria-label="Entrance Width" aria-describedby="entry-width">
+        <span class="input-group-text" id="basic-addon2">inches</span>
+        </div>
               </div>
             </div>
       </div>
     </div>
-  <div class="col col-sm-5" max-width=25%>
-    <div class="card">
+    <div class="col col-sm-5" max-width=25%>
+    <div class="card border-light">
       <img class="card-img-top" src="images/heightDifference.jpg" alt="Height difference between the ground and the entry are being measured.">
       <div class="card-body">
-        <h5 class="card-title">Height Difference</h5>
-        <p class="card-text">Measure, in inches, the height difference between the ground to the top of your entryway threshhold.</p>
-        <input type="number" class="form-control row col-auto" placeholder="0" min="0" max="12" step=".5" aria-label="Entrance Width" aria-describedby="basic-addon2">
-            <div class="input-group mb-3">
-              <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon2">inches</span>
+        <h2 class="card-title">Height Difference</h5>
+        <p class="card-text">Measure the height difference, in inches, between the ground to the top of your entryway threshhold.</p>
+        <div class="row col-auto">
+          <div class="input-group-append">
+        <input type="number" class="form-control col-sm-5" placeholder="0" min="0" max="12" step=".25" aria-label="Height Difference" aria-describedby="height-difference">
+        <span class="input-group-text" id="basic-addon2">inches</span>
               </div>
             </div>
       </div>
     </div>
   </div>
-<hr>
-
-
-<div class="modal cardfade" id="eUp" role="dialog">
-<div class="modal-dialog modal-lg" role="document">
-  <div class="modal-content">
-      <div class="modal-header card-header text-light bg-info">
-              <h3 class="col modal-title" id="reserve">Stay in the Know</h3>
-              <button type="button" class="close col text-right" data-dismiss="modal">&times;</button>
-      </div>
+  </div>
+  <div class="row col-sm-5">
+    <div class="card border-light">
       <div class="card-body">
-          <form>
-              <div class="row form-group col-form-label">
-                <p>We'll alert you whenever we make any improvements to our plans. We also promise not to sell your information to anyone, because that's invasive and creepy.</p>
-                <label for="email">Email address</label>
-                <input type="email" id="email" pattern=".+@globex.com" size="30" required>
-              </div>
-              <div class="row form-group col-form-label">
-                  <label class="col col-right col-sm-6" for="date">Date</label>
-                  <input class="col" type="date" id="date" name="date" placeholder="Date">
-              </div>
-              <div class="row form-group col-form-label">
-                  <label class="col col-right col-sm-6" for="siteType">Campsite Type</label>
-                  <div class="col btn-group btn-group-toggle" data-toggle="buttons">
-                      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                          <label class="btn btn-success">
-                            <input type="radio" name="siteTent" id="siteType" value="tent">Tent
-                          </label>
-                          <label class="btn btn-primary">
-                            <input type="radio" name="siteRV" id="siteType" value="RV">RV
-                          </label>
-                        </div>
-                        
-                  </div>
-              </div>
-              <div class="row form-group col-form-label">
-                  <div class="col">
-                      <button type="button" class="btn btn-secondary text-light" data-dismiss="modal" value="cancel">Cancel</button>
-                      <button type="button" class="btn btn-primary text-light" data-dismiss="modal" value="submit">Submit</button>
-                  </div>
-              </div>
-          </form>
+    <h2 class="card-title">Mobility devices used</h5>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="selfPushed">
+      <label class="form-check-label" for="selfPushed">
+        Manual-wheelchair, self-pushed
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="pushAssisted">
+      <label class="form-check-label" for="pushAssisted">
+        Manual-wheelchair, push-assisted
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+      <label class="form-check-label" for="push-assisted">
+        Power wheelchair
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="crutchesCaneWalker">
+      <label class="form-check-label" for="crutchesCaneWalker">
+        Walks with crutches, cane, or walker
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="noMobilityDevices">
+      <label class="form-check-label" for="noMobilityDevices">
+        No mobility devices
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="other">
+      <label class="form-check-label" for="other">
+        Other
+      </label>
+      <div class="reveal-if-active">
+        <input class="form-control form-control-md col-6" type="text" placeholder="Input alternative mobility methods here.">
       </div>
+    </div>
+    </div>
+    <div class="row col col-auto my-2">
+      <button class="btn btn-dark" type="submit" onclick="createBlueprint()"><span class="fa fa-object-group fa-lg"></span>  Create My Plans</button>
+    </div>
   </div>
 </div>
 </div>
-<div class="row">
-<select id="numCampers">
-  <div class="col col-auto">
-  <option value="Select">Select...</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-</select>
-</div>
-<div class="row">
-  <div class="col col-auto my-1">
-    <button class = "btn btn-dark" type="submit" onclick = "createBlueprint()">Create My Plans</button>
-  </div>
-</div>
-</div>
-    <script src="js/ramp.js"></script>
-    <script>
-      $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-      })
-      $().button('toggle')
-    </script>
-    <footer>
 
-    </footer>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/ramp.js"></script>
+
+<script>
+
+$("#eUp").modal('show');
+
+  $(function() {
+    $('#emailBut').click(function() {
+        $('#eUp').modal('show');
+    });
+
+    $('#closeEm').click(function() {
+        $('#eUp').modal('hide');
+    });
+
+
+  });
+    </script>
+    
+    <footer>
+      <hr>
+      <div class="container">
+          <div class="row row-content align-items-center">             
+              <div class="col-4 col-sm-2 offset-1">
+                <h5>Links</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                  </ul>  
+              </div>
+              <div class="col-6 col-sm-5 text-center">
+                <h5>Social</h5>
+                  <ul class="list-unstyled">
+                      <li><span class="fa fa-facebook fa-lg"></span><a href="http://facebook.com/">   Facebook</a></li>
+                      <li><span class="fa fa-twitter fa-lg"></span><a href="http://twitter.com/">   Twitter</a></li>
+                      <li><span class="fa fa-youtube fa-lg"></span><a href="http://youtube.com/">   YouTube</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 text-center">
+                <h5>Sources</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="https://www.ada.gov/pcatoolkit/chap6toolkit.htm">ADA</a></li>
+                    <li><a href="http://www.wheelchairramp.org/rampman/manual/rampindx.htm">Ramp Manual</a></li>
+                  </ul>
+              </div>                
+         </div>
+      </div>
+  </footer>
   </body>
 </html>
+

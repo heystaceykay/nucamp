@@ -1,19 +1,14 @@
-* {
-    margin-left:5%;
+.content {
+    margin-left: 10vw;
 }
 
-h1 {
+h1, h2, h3, h5 {
     font-size: 2em;
-    font-family: 'Major Mono Display', monospace;
-}
-
-h2 {
-    font-size: 2em;
-    font-family: 'Open Sans', cursive;
+    font-family: 'Quicksand', 'Gothic', sans-serif;
     color: #4F6272;
 }
 
-li {
+li, label {
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     color: slategrey;
@@ -22,7 +17,14 @@ li {
 p {
     font-family: 'Open Sans', sans-serif;
     color: #4F6272;
-    margin-left: 0px;
+}
+
+a {
+    color: #404E5C;
+}
+
+a:hover {
+    color: #404E5C;
 }
 
 #eUp {
@@ -39,8 +41,26 @@ p {
     color: #404E5C;
 }
 
+#rpNav {
+    font-size: 2em;
+    font-family: 'Quicksand', 'Gothic', sans-serif;
+    color: #4F6272;
+}
+
 button {
     margin-left: 25px;
+}
+
+.reveal-if-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+input[type="checkbox"]:checked ~ .reveal-if-active {
+    opacity: 1;
+    max-height: 100px; /* little bit of a magic number :( */
+    overflow: visible;
 }
 
 /* 

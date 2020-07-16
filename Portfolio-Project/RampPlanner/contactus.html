@@ -22,49 +22,46 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light sticky-top shadow-sm p-3 mb-5 bg-white rounded">
-      <div class="container">
-          <a class="navbar-brand" href="#"><img src="images/logo.png" height="50" width="50" /></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rpNav">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rpNav">
-              <span class="navbar-toggler-icon"></span>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light sticky-top shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/rampPlannerLogo.png" height="100" width="100" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rpNavBar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rpNavBar">
+          <span class="navbar-toggler-icon"></span>
           </button>
       <div class="collapse navbar-collapse" id="rpNav">
           <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span>  Home</a></li>
-              <li class="nav-item active"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>  Contact</a></li>
-              <div class="col"><li class="nav-item text-right"><button type="button" data-toggle="modal" data-target="#eUp" class="btn btn-dark text-light" data-toggle="tooltip" data-html="true" title="Be the first to know when we add new ramp styles and options!">Get updates</button></li>
-            </div>
+              <li class="nav-item active"><a class="nav-link navigate" href="index.html"><span class="fa fa-home fa-lg"></span>  Home</a></li>
+              <li class="nav-item"><a class="nav-link navigate" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>  Contact</a></li>
+              <li class="nav-item text-right"><div class="col col-md-4 col-xl-2" id="reserveBut"><button type="button" class="btn btn-info bg-info text-light">Updates</button></li>
           </ul>
       </div>
       </div>
-  </nav>
-    
+      </nav>
+    </header>
+  <div class="content">
   <h1>Get in touch</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-    <p>If you have any questions or want to contribute in some way to the future
-      of this project, we hope you'll contact us somehow. You've got options.</p>
-      </div>
+  <p>If you have any questions or want to contribute in some way to the future
+    of this project, we hope you'll contact us somehow. You've got options.</p>
+    <div class="card" style="width: 25rem;">
+      <div class="card-body">
+        <h2 class="card-title">Contact form</h5>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/rampplanner@gmail.com" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label class="row" for="name">Name</label>
+          <input class="row" type="text" name="name" id="name" placeholder="Your name" required="">
+          <label class="row" for="email-address">Email Address</label>
+          <input class="row" type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+          <label class="row" for="message">Message</label>
+          <textarea class="row" rows="5" name="message" id="message" placeholder="Type your message to us in here." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          <input class="row btn btn-dark" type="submit" value="Submit" margin-top=10px padding-top=10px >
+        </fieldset>
+        </form>
+        </div>
       </div>
     </div>
-      <div class="card" style="width: 25rem;">
-        <div class="card-body">
-          <h2 class="card-title">Contact form</h5>
-          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/rampplanner@gmail.com" method="post">
-            <fieldset id="fs-frm-inputs">
-              <label class="row" for="name">Name</label>
-              <input class="row" type="text" name="name" id="name" placeholder="Your name" required="">
-              <label class="row" for="email-address">Email Address</label>
-              <input class="row" type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
-              <label class="row" for="message">Message</label>
-              <textarea class="row" rows="5" name="message" id="message" placeholder="Type your message to us in here." required=""></textarea>
-              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-              <input class="row btn btn-dark" type="submit" value="Submit" margin-top=10px padding-top=10px >
-            </fieldset>
-          </form>
-        </div>
-      </div> 
+  </div> 
   </body>
 </html>
