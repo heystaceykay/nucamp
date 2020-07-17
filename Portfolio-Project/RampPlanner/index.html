@@ -45,7 +45,7 @@
         <li class="active">Data</li>
       </ol>
     </header>
-    <div class="modal cardfade" id="eUp" role="dialog">
+  <div class="modal cardfade" id="eUp" role="dialog">
       <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
               <div class="modal-header card-header">
@@ -56,12 +56,12 @@
                 <form>
                   <div class="row form-group form-control col-form-label">
                       <label class="col col-right col-sm-6" for="name">Name</label>
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                      <input class="col" type="text" id="name" name="date" placeholder="name">
+                      <input class="col" type="text" id="name" name="name" placeholder="name">
                   </div>
                   <div class="row form-group form-control col-form-label">
                     <label class="col col-right col-sm-6" for="eAdd">Email</label>
                         <input type="email" name="email" id="eAdd" value="email@domain.com">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </label>
                   </div>
                     <div class="row form-group col-form-label">
@@ -81,8 +81,16 @@
       <p>If you need a ramp for the entrance(s) to your home, figuring out which materials you need can be
       the most frustrating step in the building process. But it doesn't have to be. With a few
       quick measurements, we can plan your entire project right here.</p>
+
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        (You'll be needing a tape measure now.)
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
       
-      <p>(You'll need a tape measure now.)</p>
+      
+      <div class="alert alert-success" role="alert">(You'll need a tape measure now.)</div>
 
     <div class="row">
       <div class="col col-sm-5" max-width=25%>
@@ -109,7 +117,7 @@
         <div class="row col-auto">
           <div class="input-group-append">
         <input type="number" class="form-control col-sm-5" placeholder="0" min="0" max="12" step=".25" aria-label="Height Difference" aria-describedby="height-difference">
-        <span class="input-group-text" id="basic-addon2">inches</span>
+        <span class="input-group-text" id="inches">inches</span>
               </div>
             </div>
       </div>
@@ -173,6 +181,8 @@
 <script src="js/ramp.js"></script>
 
 <script>
+
+$('.alert').alert();
 
 $("#eUp").modal('show');
 
