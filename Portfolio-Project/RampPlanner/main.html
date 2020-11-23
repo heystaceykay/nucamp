@@ -1,0 +1,344 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <!-- Typeface Details -->
+    <link rel="stylesheet" href="typefaces/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa&family=Open+Sans:wght@300;400&family=Quicksand:wght@300&display=swap">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- build:css css/main.css -->
+    <!-- endbuild -->
+
+    <title>ramp planner</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-nav sticky-top">
+      <nav class="navbar navbar-expand-sm navbar-light shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/rampPlannerLogo.png" height="100" width="100" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rpNav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#rpNav">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="rpNav">
+          <ul class="navbar-nav">
+              <li class="nav-item active"><a class="nav-link navigate" href="#"><span class="fa fa-home fa-lg"></span>  Home</a></li>
+              <li class="nav-item"><a class="nav-link navigate" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>  Contact</a></li>
+              <div class="col-right">
+              <li class="nav-item text-right"><button type="button" class="btn btn-dark btn-md" id="emailBut" data-toggle="modal" data-target="#eUp"><span class="fa fa-newspaper-o fa-lg"></span>  Updates</button></li>
+              <li class="nav-item text-right"><button type="button" class="btn btn-dark btn-md" id="emailBut" data-toggle="modal" data-target="#eUp"><span class="fa fa-moon-o fa-lg"></span>  Updates</button></li>
+          </ul>
+      </div>
+      </nav>
+      </div>
+    </header>
+      <div class="modal fade" id="eUp" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="keepInTouch">Keep In Touch!</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+          </div>
+            <div class="modal-body">
+              <div class="form-group col-form-label">
+                  <label class="col col-right col-sm-6" for="name">Name</label>
+                  <input class="col col-4" type="text" id="name" name="name" placeholder="Name">
+              </div>
+              <div class="form-group col-form-label">
+                <label class="col col-right col-sm-6" for="eAdd">Email</label>
+                <input type="email" multiple name="email" id="eAdd" placeholder="email@domain.com">
+              </div>
+                <div class="form-group col-form-label">
+                  <div class="col">
+                    <button type="button" class="btn btn-secondary text-light" data-dismiss="modal" value="cancel">Cancel</button>
+                    <button type="button" class="btn btn-primary text-light" data-dismiss="modal" value="submit">Submit</button>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div>
+
+      </div>
+  
+  <div class="content">
+    <h1>Ramp Planner</h1>  
+      <p>If you need a ramp for the entrance(s) to your home, figuring out which materials you need can be
+      the most frustrating step in the building process. But it doesn't have to be. With a few
+      quick measurements, we can plan your entire project right here.</p>
+
+      <div class="alert alert-success alert-dismissible fade show" role="alert" id="tapeM">
+        You'll be needing a tape measure now.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      
+      <form >
+    <div class="row">
+      <div class="card-group">
+        <div class="card border-light">
+          <img class="card-img-top" src="images/entryWidth.jpg" alt="Doorway width being measured.">
+          <div class="card-body">
+            <h2 class="card-title">Entrance Width</h5>
+            <p class="card-text">Measure the distance, in inches, from one side to the other on the inside of your entryway.</p>
+            <div class="row col-auto">
+                <div class="input-group-append">
+                  <input type="number" class="form-control col-sm-6" placeholder="32" min="24" max="42" step=".25" aria-label="Entrance Width" aria-describedby="entry-width" id="eWidth">
+                  <span class="input-group-text" id="widthInches">inches</span>
+                </div>
+              </div>
+          </div>
+        </div>
+    <div class="card border-light">
+      <img class="card-img-top" src="images/heightDifference.jpg" alt="Height difference between the ground and the entry are being measured.">
+      <div class="card-body">
+        <h2 class="card-title">Height Difference</h5>
+        <p class="card-text">Measure the height difference, in inches, between the ground to the top of your entryway threshhold.</p>
+        <div class="row col-auto">
+          <div class="input-group-append">
+            <input type="number" class="form-control col-sm-6" placeholder="0" min="0" max="12" step=".25" aria-label="Height Difference" aria-describedby="height-difference" id=hDiff>
+            <span class="input-group-text" id="heightInches">inches</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row col-sm-12">
+    <div class="card border-light">
+      <div class="card-body">
+    <h2 class="card-title">Mobility Devices</h5>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="selfPushed">
+      <label class="form-check-label" for="selfPushed">
+        Manual-wheelchair, self-pushed
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="pushAssisted">
+      <label class="form-check-label" for="pushAssisted">
+        Manual-wheelchair, push-assisted
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+      <label class="form-check-label" for="powerChair">
+        Power wheelchair
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="crutchesCaneWalker">
+      <label class="form-check-label" for="crutchesCaneWalker">
+        Walks with crutches, cane, or walker
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="noMobilityDevices">
+      <label class="form-check-label" for="noMobilityDevices">
+        No mobility devices
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="other">
+      <label class="form-check-label" for="other">
+        Other
+      </label>
+      <div class="reveal-if-active">
+        <input class="form-control form-control-md col-6" type="text" placeholder="Input alternative mobility methods here.">
+      </div>
+    </div>
+    </div>
+    <div class="row col col-auto my-2">
+      <button class="btn btn-dark" id="smooth" type="submit" onclick="createBlueprint()"><span class="fa fa-object-group fa-lg"></span>  Create My Plans</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- MAIN PAGE END / BUILD PAGE START -->
+<!-- document.querySelector(“button”).addEventListener("click", viewPlans); -->
+<div id='steps123'></div>
+<div id='printableArea'>
+<div class="pageBuild" id="myBlueprint">
+  <div class="jumbotron">
+    <h1>Ramp Building Blueprint</h1>
+    <p>Let's build that ramp.</p>
+    <a class="button btn btn-dark" href="javascript:void(0);" onclick="printPageArea('printableArea')"><span class="fa fa-print fa-lg" aria-hidden="true"></span>     Print</a>
+
+  </div>
+  <div class="card-group">
+    <div class="card border-light">
+      <div class="card-body">
+        <h3 class="card-title">Tools</h3>
+        <ul class="shopping-list">
+          <li>Circular Saw</li>
+          <li>Saw Guide (any straight edge)</li>
+          <li>(2) Clamps</li>
+          <li>Chop Saw (optional)</li>
+          <li>Cordless Drill</li>
+          <li>Combination pilot hole / countersink bit</li>
+          <li>Chalk Line (optional)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card border-light">
+      <div class="card-body">
+        <h3 class="card-title">Supplies</h3>
+        <ul class="list-unstyled shopping-list">
+          <li>(24) 3-inch galvanized deck screws</li>
+          <li>(24) 1-5/8 inch wood screws</li>
+          <li>Paint or DeckOver</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card border-light">
+    <div class="card-body">
+      <h3 class="card-title">Lumber</h3>
+      <ul>
+      <li><span id="myLumber1"></span> - 2" x 4" x 8' boards</li>
+      <li><span id="myLumber2"></span> - 2" x 8" x 8' boards</li>
+      <li><span id="myLumber3"></span> - 4' x 8' x 3/4" boards, plywood or OSB</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/ramp.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+
+function createBlueprint() {
+  document.getElementById('steps123').innerHTML = `${lumber}`;
+}
+
+
+let lumber = eW + " inches x " (hD*15) + " inches"; //bad math for the garbage
+
+let eW = getElementById('#eWidth');
+let hD = getElementById('#hDiff');
+
+let myLumber1 = eWidth;
+
+function lumberFormula() {
+  
+  if (eW < 24 || ew < 36 ) {
+    document.getElementById('myLumber4').innerHTML = 
+    alert("Your entryway is not within the acceptable size range for this application at this time. <a href='#eUp'>Please sign up for our newsletter to recieve information on future developments!");
+  }
+    else {
+      document.getElementById('myLumber4').innerHTML = "4 ft x 8 ft piece of plywood or OSB ";
+    }
+  
+  if (hD > 8) {
+    document.getElementById('myLumber3').innerHTML = "2 - ";
+  } 
+    else {
+      document.getElementById('myLumber3').innerHTML = "1 - ";
+    }
+
+
+
+  };
+
+function viewPlans() {
+  document.getElementById('myBlueprint').innerHTML = "<h3>Step One</h3><p>Aquire your above materials and lumber.</p>";
+}
+
+
+
+$(document).ready(function(){
+  $("smooth").on('click', function(event) {
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+function printPageArea(myBlueprint){
+    var printContent = document.getElementById(myBlueprint);
+    var WinPrint = window.open('', '', 'width=900,height=650');
+    WinPrint.document.write(printContent.innerHTML);
+    WinPrint.document.close();
+    WinPrint.focus();
+    WinPrint.print();
+    WinPrint.close();
+}
+
+$(document).ready(function(){
+  $("#emailBut").click(function(){
+    $("#eUp").modal({backdrop: true});
+  });
+  $("#emailCanx").click(function(){
+    $("#eUp").modal({backdrop: false});
+  });
+});
+
+</script>
+
+    <footer>
+      <hr>
+      <div class="container">
+          <div class="row row-content align-items-center">             
+              <div class="col-4 col-sm-2 offset-1">
+                <h2>Links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                  </ul>  
+              </div>
+              <div class="col-6 col-sm-5 text-center">
+                <div class="social">
+                <h2>Social</h2>
+                  <ul class="list-unstyled">
+                      <div class="col"><a href="http://facebook.com/" name="Facebook account"><span class="fa fa-facebook fa-lg"></span></a></div>
+                      <div class="col"><a href="http://twitter.com/" name="Twitter account"><span class="fa fa-twitter fa-lg"></span></a></div>
+                      <div class="col"><a href="http://youtube.com/" name="Youtube account"><span class="fa fa-youtube fa-lg"></span></a></div>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                <h2>Sources</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="https://www.ada.gov/pcatoolkit/chap6toolkit.htm" name="ADA Regulations">ADA Regulations</a></li>
+                    <li><a href="http://www.wheelchairramp.org/rampman/manual/rampindx.htm" name="Ramp Building Manual">Ramp Manual</a></li>
+                    <li><a href="https://www.handiramp.com/funding.htm" name="Funding Assistance for building ramps">Funding Assistance</a></li>
+                  </ul>
+              </div>                
+         </div>
+      </div>
+  </footer>
+  </body>
+  </html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Star Trek: The Next Generation Episode Randomizer</title>
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <style>
+            body {
+                background: url("https://i.ibb.co/1z6zdVC/picard1.jpg") no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            h1 {
+                margin: 20px;
+                font-family: 'Arial Black', Arial, sans-serif;
+                line-height: 80%;
+                font-size: 4.5em;
+                color: white;
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color:black;
+            }
+
+            h1 span {
+                display: table;
+            }
+
+            p span {
+                display: table;
+                font-family: Arial, sans-serif;
+                padding: auto;
+                font-size: 1em;
+                font-weight: 100;
+            }
+
+            button {
+                margin-left: auto;
+                margin-right: auto;
+                align-content: center;
+                background-color: white;
+                border: .5px black solid;
+                border-radius: 15px;
+                color: black;
+                margin: 20px;
+                padding: 15px;
+                text-align: center;
+                display: inline-block;
+                font-size: 24px;
+            }
+
+            #myChoice {
+                width: 20%;
+                background-color: white;
+                border: .25px black solid;
+                border-radius: 15px;
+                padding: 20px;
+                margin: 20px 20px;
+                font-family: Helvetica, 'Gotham', Arial, sans-serif;
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+<body>
+    
+    <h1>Which<span>Episode?</span></h1>
+    
+    <button type="button" onclick="filmChooser()">A film</button></span></span>
+    <button type="button" onclick="episodeChooser()">TV show</button></span></span>
+    <button type="button" onclick="anything()">Anything</button></span></span>
+    <div class="output" id="myChoice">
+    </div>
+    <script>
+
+
+
+
+    function episodeChooser() {
+
+     let series = `Star Trek: The Next Generation`;
+
+        function showEpisode() {
+            document.getElementById('myChoice').innerHTML = `<p>You've been assigned <span>${series} </span><span>season ${season}, episode ${episode}.</span><span><a href="http://www.netflix.com/" target="_blank" alt="netflix home page">&#xf144;</a></p>`;
+            }
+    
+    const season = Math.floor(Math.random() * 7) + 1;
+    console.log(`You have selected season ${season}.`);
+
+    let episode = 0;
+    
+    switch (season) {
+        case 1:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+            episode = Math.floor(Math.random() * 26) + 1;
+            console.log(`You have selected episode ${episode}.`);
+            break;
+        case 2: 
+            episode = Math.floor(Math.random() * 22) + 1; 
+            console.log(`You have selected episode ${episode}.`);
+            break;
+    }
+
+    console.log(`You have chosen episode ${episode}.`)
+
+    showEpisode();
+
+   }
+
+     function filmChooser() {
+
+          function filmChosen() {
+               document.getElementById('myChoice').innerHTML = `<p>You've been assigned <span>${filmTitle}</span></p>`;
+          }
+
+          const filmID = Math.floor(Math.random() * 13) + 1;
+
+          let filmTitle = "";
+
+          switch(filmID) {
+          case 1: 
+               filmTitle = 'The Motion Picture (1979)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 2: 
+               filmTitle = 'The Wrath of Khan (1982)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 3: 
+               filmTitle = 'The Search for Spock (1984)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 4: 
+               filmTitle = 'The Voyage Home (1986)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 5: 
+               filmTitle = 'The Final Frontier (1989)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 6: 
+               filmTitle = 'The Undiscovered Country (1991)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 7: 
+               filmTitle = 'Generations (1994)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 8: 
+               filmTitle = 'First Contact (1996)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 9: 
+               filmTitle = 'Insurrection (1998)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 10: 
+               filmTitle = 'Nemesis (2002)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 11: 
+               filmTitle = 'Star Trek (2009)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 12: 
+               filmTitle = 'Into Darkness (2013)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          case 13: 
+               filmTitle = 'Beyond (2016)';
+               console.log(`You have selected ${filmTitle}.`);
+               break;
+          }
+
+          console.log(`x You have selected ${filmTitle}.`);
+
+          filmChosen();
+
+          function changeBodyBg(seriesID){
+               document.body.style.backgroundimage = 'url("https://i.ibb.co/1z6zdVC/picard1.jpg")';
+          }
+
+     }
+
+     function anything() {
+     let frogs = Math.floor(Math.random() * 2) + 1;
+     switch(frogs) {
+     case 0:
+          console.log(`A television show!`);
+          episodeChooser();
+     case 1:
+          console.log(`A movie!`);
+          filmChooser();
+     }
+
+     // function anything() {
+     // let frogs = Math.floor(Math.random() * 2) + 1;
+     // switch(frogs) {
+     // case 0:
+     //      console.log(`A television show!`);
+     //      episodeChooser();
+     // case 1:
+     //      console.log(`A movie!`);
+     //      filmChooser();
+     // }
+
+
+
+
+}
+
+anything();
+
+    </script>
+</body>
+

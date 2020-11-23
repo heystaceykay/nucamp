@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Star Trek: The Next Generation Episode Randomizer</title>
+        <style>
+            body {
+                background: url("space.jpeg") no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            h1 {
+                margin: 20px;
+                font-family: 'Arial Black', Arial, sans-serif;
+                line-height: 80%;
+                font-size: 4.5em;
+                color: white;
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color:black;
+            }
+
+            h1 span {
+                display: table;
+            }
+
+            p span {
+                display: table;
+                font-family: Arial, sans-serif;
+                padding: auto;
+                font-size: 1em;
+                font-weight: 100;
+            }
+
+            button {
+                margin-left: auto;
+                margin-right: auto;
+                align-content: center;
+                background-color: white;
+                border: .5px black solid;
+                border-radius: 15px;
+                color: black;
+                margin: 20px;
+                padding: 15px;
+                text-align: center;
+                display: inline-block;
+                font-size: 24px;
+            }
+
+            #myMovie
+            {
+                width: 20%;
+                background-color: white;
+                border: .25px black solid;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 5px 20px;
+                font-family: Helvetica, 'Gotham', Arial, sans-serif;
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+
+        </style>
+    </head>
+<body>
+    
+    <h1>Which<span>Movie?</span></h1>
+
+    <button type="button" onclick="filmChooser()">Cinematic!</button></span></span>
+    
+    <div class="output" id="myMovie">
+    </div>
+
+    <script>
+
+    function filmChooser() {
+
+    function filmChosen() {
+        document.getElementById('myMovie').innerHTML = `<p>You've been assigned <span>${filmTitle}</span></p>`;
+        
+        }
+
+    const filmID = Math.floor(Math.random() * 13) + 1;
+
+    let filmTitle = "";
+
+    switch(filmID) {
+        case 1: 
+            filmTitle = 'The Motion Picture (1979)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 2: 
+            filmTitle = 'The Wrath of Khan (1982)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 3: 
+            filmTitle = 'The Search for Spock (1984)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 4: 
+            filmTitle = 'The Voyage Home (1986)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 5: 
+            filmTitle = 'The Final Frontier (1989)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 6: 
+            filmTitle = 'The Undiscovered Country (1991)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 7: 
+            filmTitle = 'Generations (1994)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 8: 
+            filmTitle = 'First Contact (1996)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 9: 
+            filmTitle = 'Insurrection (1998)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 10: 
+            filmTitle = 'Nemesis (2002)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 11: 
+            filmTitle = 'Star Trek (2009)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 12: 
+            filmTitle = 'Into Darkness (2013)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+        case 13: 
+            filmTitle = 'Beyond (2016)';
+            console.log(`You have selected ${filmTitle}.`);
+            break;
+    }
+
+
+
+    console.log(`x You have selected ${filmTitle}.`);
+
+    filmChosen();
+
+    function changeBodyBg(seriesID){
+                document.body.style.backgroundimage = 'url("https://i.ibb.co/1z6zdVC/picard1.jpg")';
+            }
+
+    }
+
+        // picard background: https://i.ibb.co/1z6zdVC/picard1.jpg
+
+            /* The Motion Picture
+            The Wrath of Khan
+            The Search for Spock
+            The Voyage Home
+            The Final Frontier
+            The Undiscovered Country
+            Generations
+            First Contact
+            Insurrection
+            Nemesis
+            Star Trek
+            Into Darkness
+            Beyond */
+
+    </script>
+</body>

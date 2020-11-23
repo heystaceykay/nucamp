@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Star Trek: The Next Generation Episode Randomizer</title>
+        <style>
+            body {
+            background: url("https://i.ibb.co/1z6zdVC/picard1.jpg") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        h1 {
+            font-family: 'Arial Black', Arial, sans-serif;
+            line-height: 80%;
+            font-size: 4.5em;
+            color: white;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: .5px;
+            -webkit-text-stroke-color:black;
+        }
+
+        h1 span {
+            display: table;
+        }
+
+        button {
+            margin-left: auto;
+            margin-right: auto;
+            align-content: center;
+            background-color: white;
+            border: .5px black;
+            border-radius: 15px;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 24px;
+        }
+        </style>
+    </head>
+<body>
+    
+    <h1>Which<span>Episode?</span></h1>
+    <button type="button" onclick="episodeChooser()">Engage!</button></span></span>
+    <button onclick="myFunction()">Click Me</button>
+    <div id="myDIV">
+        This is my DIV element.
+    </div>
+    <script>
+    function myFunction() {
+    let x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    function episodeChooser() {
+    const season = Math.floor(Math.random() * 7) + 1;
+    console.log('You have selected season ' + season + '.');
+    
+    switch (season) {
+        case 1:
+            let s1episode = Math.floor(Math.random() * 26) + 1;
+            console.log('You have selected episode ' + s1episode + '.');
+            break;
+        case 2: 
+            let s2episode = Math.floor(Math.random() * 22) + 1; 
+            console.log('You have selected episode ' + s2episode + '.');
+            break;
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+            let s3to7episode = Math.floor(Math.random() * 26) + 1;
+            console.log('You have selected episode ' + s3to7episode + '.');
+            alert('You have selected season ' + season + ', episode ' + s3to7episode + '!');
+            break;
+            }
+        }
+    </script>
+</body>

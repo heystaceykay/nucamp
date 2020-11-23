@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Star Trek: The Next Generation Episode Randomizer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <style>
+            body {
+                background: url("trekpick/images/picard1.jpeg") no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            h1 {
+                margin: 20px;
+                font-family: 'Arial Black', Arial, sans-serif;
+                line-height: 80%;
+                font-size: 4.5em;
+                color: white;
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color:black;
+            }
+
+            h1 span {
+                display: table;
+            }
+
+            p span {
+                display: table;
+                font-family: Arial, sans-serif;
+                padding: auto;
+                font-size: 1em;
+                font-weight: 100;
+            }
+
+            button {
+                margin-left: auto;
+                margin-right: auto;
+                align-content: center;
+                background-color: white;
+                border: .5px black solid;
+                border-radius: 15px;
+                color: black;
+                margin: 20px;
+                padding: 15px;
+                text-align: center;
+                display: inline-block;
+                font-size: 24px;
+            }
+
+            #myEpisode
+            {
+                width: 20%;
+                background-color: white;
+                border: .25px black solid;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 5px 20px;
+                font-family: Helvetica, 'Gotham', Arial, sans-serif;
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+
+        </style>
+    </head>
+<body>
+    
+    <h1>Which<span>Episode?</span></h1>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button type="button" class="dropdown-item" onclick="episodeChooser()">Any series!</button>
+          <button type="button" class="dropdown-item" onclick="theOriginalSeries()">The Original Series</button>
+          <button type="button" class="dropdown-item" onclick="theAnimatedSeries()">The Animated Series</button>
+          <button type="button" class="dropdown-item" onclick="theNextGen()">The Next Generation</button>
+          <button type="button" class="dropdown-item" onclick="deepSpaceNine()">Deep Space Nine</button>
+          <button type="button" class="dropdown-item" onclick="voyager()">Voyager</button>
+          <button type="button" class="dropdown-item" onclick="enterprise()">Enterprise</button>
+          <button type="button" class="dropdown-item" onclick="discovery()">Discovery</button>
+          <button type="button" class="dropdown-item" onclick="picard()">Picard</button>
+        </div>
+      </div>
+
+    <div class="output" id="myEpisode">
+    </div>
+
+
+    <script src="trekpick/node_modules/jquery-slim/dist/jquery.slim.min.js"></script>
+    <script src="trekpick/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="trekpick/node_modules/bootstrap-social/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+
+    let series = "";
+    let season = 1;
+    let episode = 0;
+
+    function showEpisode() {
+        document.getElementById('myEpisode').innerHTML = `<p>You've been assigned <span>series ${series}: season ${season}, episode ${episode}.</span></p>`;
+        
+        }
+
+    const seriesID = Math.floor(Math.random() * 9) + 1;
+
+   
+    function theOriginalSeries() {
+        series = 'The Original Series';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 3) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch(season) {
+            case 1: 
+                episode = Math.floor(Math.random() * 29) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 2:
+                episode = Math.floor(Math.random() * 29) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 3:
+                episode = Math.floor(Math.random() * 29) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+        }
+        break;
+    }
+
+    function theAnimatedSeries() {
+        series = 'The Animated Series';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 2) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch(season) {
+            case 1: 
+                episode = Math.floor(Math.random() * 16) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 2:
+                episode = Math.floor(Math.random() * 6) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+        }
+        break;
+    }
+    
+    function theNextGen() {
+        series = 'The Next Generation';
+            console.log(`You have selected ${series}.`);
+            season = Math.floor(Math.random() * 7) + 1;
+            console.log(`You have selected season ${season}.`);
+            switch (season) {
+                case 1:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                    episode = Math.floor(Math.random() * 26) + 1;
+                    console.log(`You have selected episode ${episode}!`);
+                    break;
+                case 2: 
+                    episode = Math.floor(Math.random() * 22) + 1;
+                    console.log(`You have selected episode ${episode}!`);
+                    break;
+            }
+            break;
+    }
+
+    function deepSpaceNine() {
+        series = 'Deep Space Nine';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 7) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch (season) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+                episode = Math.floor(Math.random() * 26) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 1: 
+                episode = Math.floor(Math.random() * 20) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+        }
+        break;
+    }
+
+    function voyager() {
+        series = 'Voyager';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 7) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch (season) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+                episode = Math.floor(Math.random() * 26) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 1: 
+                episode = Math.floor(Math.random() * 16) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+        }
+        break;
+    }
+
+    function enterprise() {
+        series = 'Enterprise';
+        console.log(`You have selected season ${series}.`);
+        season = Math.floor(Math.random() * 4) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch (season) {
+            case 1: 
+            case 2:
+                episode = Math.floor(Math.random() * 26) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 3:
+                episode = Math.floor(Math.random() * 24) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 4:
+                episode = Math.floor(Math.random() * 22) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+        }
+        break;
+    }
+
+    function discovery() {
+        series = 'Discovery';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 2) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch(season) {
+            case 1: 
+                episode = Math.floor(Math.random() * 15) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 2:
+                episode = Math.floor(Math.random() * 14) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+        }
+        break;
+    }
+
+    function shortTreks() {
+        series = 'Short Treks';
+        console.log(`You have selected ${series}.`);
+        season = Math.floor(Math.random() * 2) + 1;
+        console.log(`You have selected season ${season}.`);
+        switch(season) {
+            case 1: 
+                episode = Math.floor(Math.random() * 4) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+            case 2:
+                episode = Math.floor(Math.random() * 6) + 1;
+                console.log(`You have selected episode ${episode}!`);
+                break;
+        }
+        break;
+    }
+
+    function picard() {
+        series = 'Picard';
+        console.log(`You have selected ${series}.`);
+        episode = Math.floor(Math.random() * 10) + 1;
+        console.log(`You have selected ${season} episode ${episode}!`);
+        break;
+    }
+
+    function episodeChooser() {
+
+    switch(seriesID) {
+        case 1: 
+            theOriginalSeries();
+        case 2:
+            theAnimatedSeries();
+        case 3: 
+            theNextGen();
+        case 4: 
+            deepSpaceNine();
+        case 5: 
+            voyager();
+        case 6: 
+            enterprise();
+        case 7: 
+            discovery();
+        case 8:
+            shortTreks();
+        case 9:
+            picard();
+    }
+
+
+
+    console.log(`x You have selected ${series}.`);
+    console.log(`x You have selected season ${season}.`);
+    console.log(`x You have selected episode ${episode}.`);
+
+    showEpisode();
+
+    // function changeBodyBg(seriesID){
+    //             document.body.style.backgroundimage = 'url("https://i.ibb.co/1z6zdVC/picard1.jpg")';
+    //         }
+
+    }
+    </script>
+</body>
+</html>

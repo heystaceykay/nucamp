@@ -1,75 +1,88 @@
+/** @format */
+
+
+
 .content {
-    margin-left: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
-h1, h2, h3, h5 {
-    font-size: 2em;
-    font-family: 'Quicksand', 'Gothic', sans-serif;
-    color: #4F6272;
+h1,
+h2,
+h3,
+h5 {
+  font-size: 2em;
+  font-family: "Quicksand", "Gothic", sans-serif;
+  color: #4f6272;
 }
 
-li, label {
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-    color: slategrey;
+li,
+label {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  color: slategrey;
+}
+
+.jumbotron {
+  background-color: linear-gradient(to right, #333333, #4f6272);
+  color: white;
+  margin: 0vw;
 }
 
 ul shopping-list {
-    list-style: unstyled;
-    }
-    
-    ul shopping-list li:before {
-        font-size: large;
-        content: '    ';
+  list-style: unstyled;
+}
+
+ul shopping-list li:before {
+  font-size: large;
+  content: "    ";
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    color: #4F6272;
+  font-family: "Open Sans", sans-serif;
+  color: #4f6272;
 }
 
 a {
-    color: #404E5C;
+  color: #404e5c;
 }
 
 a:hover {
-    color: #404E5C;
+  color: #404e5c;
 }
 
 #eUp {
-    font-size: medium;
-}
-
-.nav {
-    background-color: white;
-    color: #404E5C;
-}
-
-.navigate {
-    font-family: 'Open Sans', sans-serif;
-    color: #404E5C;
+  font-size: medium;
 }
 
 #rpNav {
-    font-size: 2em;
-    font-family: 'Quicksand', 'Gothic', sans-serif;
-    color: #4F6272;
+  font-size: 1.5em;
+  font-family: "Quicksand", "Gothic", sans-serif;
+  color: #4f6272;
 }
 
 button {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .reveal-if-active {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-  }
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
 
 input[type="checkbox"]:checked ~ .reveal-if-active {
-    opacity: 1;
-    max-height: 100px; /* little bit of a magic number :( */
-    overflow: visible;
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+
+#smooth {
+  scroll-behavior: smooth;
+}
+
+#myBlueprint {
+  background-color: slategrey;
 }
 
 /* 

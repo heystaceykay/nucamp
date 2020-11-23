@@ -1,0 +1,35 @@
+body {
+    background: url("trekpick/images/picard1.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   }
+
+h1 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    line-height: 80%;
+    font-size: 4.5em;
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color:black;
+}
+
+h1 span {
+    display: table;
+  }
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    background-color: white;
+    border: .5px black;
+    border-radius: 15px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+}

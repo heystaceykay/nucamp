@@ -73,14 +73,15 @@
   <div class="card-deck">
     <div class="card border-light">
       <div class="card-body">
-        <h3 class="card-title">Tools</h5>
-        <ul class="list-unstyled shopping-list">
+        <h3 class="card-title">Tools</h3>
+        <ul class="shopping-list">
           <li>Circular Saw</li>
           <li>Saw Guide (any straight edge)</li>
           <li>(2) Clamps</li>
           <li>Chop Saw (optional)</li>
           <li>Cordless Drill</li>
-          <li>Combination pilot hole / countersink bit Chalk Line (optional)</li>
+          <li>Combination pilot hole / countersink bit</li>
+          <li>Chalk Line (optional)</li>
         </ul>
       </div>
     </div>
@@ -89,7 +90,7 @@
     <div class="row col col-sm-5" max-width=25%>
     <div class="card border-light">
       <div class="card-body">
-        <h3 class="card-title">Supplies</h5>
+        <h3 class="card-title">Supplies</h3>
         <ul class="list-unstyled shopping-list">
           <li>(24) 3-inch galvanized deck screws</li>
           <li>(24) 1-5/8 inch wood screws</li>
@@ -102,14 +103,43 @@
 <div class="row col col-sm-5">
   <div class="card border-light">
     <div class="card-body">
-      <h3 class="card-title">Step 1</h3>
+      <h3 class="card-title">Lumber</h3>
+      <span id="myGreenprint"></span>
+      <span id="myLumber"></span>
     </div>
   </div>
 </div>
 </div> 
 
+<!-- <div class="card border-light">
+  <div class="card-body">
+    <h3 class="card-title">Lumber</h3>
+    <ul>
+    ${myLumber}
+    </ul>
+  </div>
+</div> -->
     
+
+
+<script src="js/ramp.js"></script>
     <script>
+
+      function buildIt() {
+        document.getElementById('blueprint') = `${myLumber}`;
+
+      }
+
+
+      let myLumber = myLumber1 + myLumber2 + myLumber3;
+
+      let myLumber1 = `<li><span id="myLumber1"></span> - 2" x 4" x 8' boards</li>`;
+      let myLumber2 = `<li><span id="myLumber2"></span> - 2" x 8" x 8' boards</li>`;
+      let myLumber3 = `<li><span id="myLumber3"></span> - 4' x 8' x 3/4" boards, plywood or OSB</li>`;
+
+
+
+
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })

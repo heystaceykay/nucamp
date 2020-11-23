@@ -1,0 +1,4 @@
+node_modules
+/Screenshots
+*.pdf
+/NucampFolder/./../*.pdf
