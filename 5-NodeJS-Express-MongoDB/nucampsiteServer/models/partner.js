@@ -17,7 +17,8 @@ const partnerSchema = new Schema({
      },
      featured: {
           type: Boolean,
-          required: false
+          "default": false,
+          required: false,
      },
  }, {
      timestamps: true

@@ -16,10 +16,13 @@ const promotionSchema = new Schema({
      },
      featured: {
           type: Boolean,
-          required: false
+          "default": false,
+          required: false,
      },
      cost: {
           type: Currency,
+          "required": true,
+          "min": 0,
      },
      description: {
           type: String,
@@ -29,6 +32,6 @@ const promotionSchema = new Schema({
      timestamps: true
  });
 
-const promotion = mongoose.model('promotion', promotionSchema);
+const promotion = mongoose.model('Promotion', promotionSchema);
 
 module.exports = promotion;
