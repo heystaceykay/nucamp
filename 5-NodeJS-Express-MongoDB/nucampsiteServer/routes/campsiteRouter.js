@@ -213,4 +213,4 @@ campsiteRouter.route('/:campsiteId/comments/:commentId')
     .catch(err => next(err));
 });
 
-model.exports = campsiteRouter;
+module.exports = campsiteRouter;
